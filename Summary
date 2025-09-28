@@ -1,0 +1,38 @@
+### Summary: Task 4 – Setup and Use a Firewall on Windows
+
+This task focuses on understanding and applying basic firewall rules to control network traffic on Windows systems. 
+Firewalls are critical components in cybersecurity, acting as gatekeepers that filter traffic based on predefined rules.
+
+---
+
+#### Windows Firewall
+
+- **Tool Used**: Windows Defender Firewall with Advanced Security
+- **Steps**:
+  1. Open the firewall tool using `wf.msc` or via Control Panel.
+  2. Navigate to **Inbound Rules** to view existing configurations.
+  3. Create a new rule to **block TCP port 23** (Telnet), which is commonly disabled due to its lack of encryption.
+  4. Test the rule using `telnet localhost 23`—connection should fail.
+  5. Delete the rule to restore the original state.
+
+---
+
+#### Key Concepts
+
+- **Inbound vs Outbound Rules**: Inbound rules control traffic entering the system; outbound rules control traffic leaving.
+- **Port Filtering**: Specific ports (e.g., 22 for SSH, 23 for Telnet) can be allowed or blocked to manage access.
+- **Stateful Inspection**: Firewalls track the state of connections to make intelligent filtering decisions.
+- **Security Implication**: Blocking insecure services like Telnet enhances system security.
+
+---
+
+#### Deliverables
+  - Firewall rule creation
+  - Rule status
+  - Test results
+  - Rule deletion
+
+---
+
+This task demonstrates practical firewall management skills essential for system administrators and cybersecurity professionals. 
+It reinforces the importance of rule-based traffic control and secure service configuration.
